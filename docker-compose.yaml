@@ -1,0 +1,8 @@
+services:
+  moca-exporter:
+    container_name: moca-exporter
+    image: moca-exporter:alpha
+    ports:
+      - 8787:8080
+    volumes:
+      - ./configs:/configs:ro
